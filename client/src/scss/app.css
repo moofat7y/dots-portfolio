@@ -11320,6 +11320,12 @@ button.fadeup:hover {
   .home_banner .layer::before {
     content: none;
   }
+  .home_banner .offers h3, .home_banner .offers .h3 {
+    font-size: 14px !important;
+  }
+  .home_banner .offers p {
+    font-size: 12px !important;
+  }
 }
 .company-about .icon {
   width: 60px;

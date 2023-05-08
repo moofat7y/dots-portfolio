@@ -278,6 +278,8 @@ button.fadeup {
 
 ///// Home ////
 .home_banner {
+  .offers {
+  }
   .layer {
     div.header {
       h1 {
@@ -349,6 +351,14 @@ button.fadeup {
     .layer {
       &::before {
         content: none;
+      }
+    }
+    .offers {
+      h3 {
+        font-size: 14px !important;
+      }
+      p {
+        font-size: 12px !important;
       }
     }
   }

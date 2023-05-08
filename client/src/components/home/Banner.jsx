@@ -19,7 +19,7 @@ const Banner = () => {
       </div>
 
       <div className="container text-center">
-        <div className="d-flex justify-content-center gap-3 gap-xl-5 flex-wrap flex-lg-nowrap">
+        <div className="offers d-flex justify-content-center gap-3 gap-xl-5 flex-wrap flex-lg-nowrap">
           <div className="d-flex flex-column align-items-center justify-content-center">
             <CiMedal className="text-danger display-4 mb-3" />
             <h3 className="fw-bolder mb-2">Award Design</h3>
