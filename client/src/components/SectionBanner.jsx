@@ -3,11 +3,8 @@ import { BsDot } from "react-icons/bs";
 
 const SectionBanner = ({ header, main, link }) => {
   return (
-    <div
-      style={{ height: "60vh" }}
-      className="section-banner d-flex align-items-center"
-    >
-      <div className="container text-center text-white">
+    <div className="section-banner pt-120 pb-120 d-flex align-items-center">
+      <div className="container pt-80 pb-80 text-center text-white">
         <h1 className="fw-bold mb-4">{header}</h1>
         <div className="d-flex justify-content-center align-items-center lh-1">
           <span className=" fs-7">{main}</span>

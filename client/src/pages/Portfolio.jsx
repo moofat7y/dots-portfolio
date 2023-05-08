@@ -5,7 +5,6 @@ import { useLocation } from "react-router-dom";
 
 const Portfolio = () => {
   const state = useLocation();
-  console.log(state);
   useEffect(() => {
     if (state?.state?.navProp) {
       const sec = document.getElementsByClassName(`${state.state.navProp}`);
@@ -14,7 +13,7 @@ const Portfolio = () => {
   }, [state.state]);
   return (
     <div className="portfolio">
-      <SectionBanner header="Portfolio" main="Home" link="About" />
+      <SectionBanner header="Portfolio" main="Home" link="Portfolio" />
       <Popular />
     </div>
   );

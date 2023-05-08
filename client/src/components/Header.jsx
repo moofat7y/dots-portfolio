@@ -8,9 +8,9 @@ const Header = () => {
       className="navbar position-absolute w-100 navbar-expand-md py-md-4"
     >
       <div className="container-fluid px-md-5">
-        <a className="navbar-brand" href="#">
+        <NavLink to="/" className="navbar-brand">
           <img className="logo" src={Logo} alt="" />
-        </a>
+        </NavLink>
         <button
           className="navbar-toggler"
           type="button"
@@ -28,9 +28,9 @@ const Header = () => {
           aria-labelledby="offcanvasNavbarLabel"
         >
           <div className="offcanvas-header">
-            <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
-              Offcanvas
-            </h5>
+            <NavLink to="/" className="navbar-brand">
+              <img className="logo" src={Logo} alt="" />
+            </NavLink>
             <button
               type="button"
               className="btn-close"

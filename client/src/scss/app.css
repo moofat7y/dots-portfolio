@@ -11197,6 +11197,35 @@ button.fadeup:hover {
     padding-right: 40px;
   }
 }
+.top-arrow {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  z-index: 999;
+  width: 50px;
+  height: 50px;
+  line-height: 46px;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 999;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out;
+  visibility: hidden;
+}
+.top-arrow:hover {
+  color: #b92026;
+}
+.top-arrow.active {
+  opacity: 1;
+  visibility: visible;
+}
+
 .navbar .navbar-nav .nav-link {
   font-weight: 600;
   position: relative;
@@ -11546,6 +11575,7 @@ footer .social a:hover {
 
 .portfolio .design .images .thumbnail-inner {
   transition: 0.3s ease-in-out;
+  position: relative;
   overflow: hidden;
 }
 .portfolio .design .images .thumbnail-inner img {
@@ -11558,4 +11588,24 @@ footer .social a:hover {
 }
 .portfolio .design .images .thumbnail-inner:hover img {
   transform: scale(1);
+}
+.portfolio .design .images .thumbnail-inner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 15px solid;
+  border-color: #b92026 #b92026 transparent transparent;
+  z-index: 5;
+}
+.portfolio .design .images .thumbnail-inner::after {
+  content: "";
+  position: absolute;
+  top: -9px;
+  right: -75px;
+  width: 221px;
+  height: 10px;
+  background-color: #f2f2f2;
+  z-index: 5;
+  transform: rotateZ(45deg);
 }/*# sourceMappingURL=app.css.map */
