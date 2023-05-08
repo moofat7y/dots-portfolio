@@ -2,7 +2,6 @@ import React from "react";
 import SectionMainHeader from "../SectionMainHeader";
 import { FiPhoneCall } from "react-icons/fi";
 import { HiOutlineLocationMarker, HiOutlineMail } from "react-icons/hi";
-import { GrLocation } from "react-icons/gr";
 
 const CardSec = () => {
   return (

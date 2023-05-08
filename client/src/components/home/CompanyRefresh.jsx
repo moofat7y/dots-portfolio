@@ -10,12 +10,11 @@ const CompanyRefresh = () => {
             <div className="thumbnail">
               <img
                 style={{ width: "543px", height: "auto" }}
-                src="http://rainbowit.net/themes/imroz/wp-content/uploads/2021/05/about-1.png"
+                src="https://res.cloudinary.com/dzlrv81i7/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1683525733/samples/dots-portfolio/about-1_ayqgoe.jpg?_s=public-a"
                 className="object-fit-cover w-100 d-block"
                 alt="about-1"
                 decoding="async"
                 loading="lazy"
-                srcSet="http://rainbowit.net/themes/imroz/wp-content/uploads/2021/05/about-1.png 543w, http://rainbowit.net/themes/imroz/wp-content/uploads/2021/05/about-1-243x300.png 243w"
                 sizes="(max-width: 543px) 100vw, 543px"
               />
             </div>

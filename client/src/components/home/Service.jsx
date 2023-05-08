@@ -1,6 +1,5 @@
 import React from "react";
 import SectionMainHeader from "../SectionMainHeader";
-import { CiWavePulse1, CiDesktop } from "react-icons/ci";
 import { IoPersonOutline } from "react-icons/io5";
 import { TbWaveSine } from "react-icons/tb";
 import { RxDesktop } from "react-icons/rx";
