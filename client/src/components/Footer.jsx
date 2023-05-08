@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../assets/Asset1.png";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { GrFacebookOption } from "react-icons/gr";
 const Footer = () => {
@@ -44,13 +44,31 @@ const Footer = () => {
               <h5>Quick Link</h5>
               <ul className="navbar-nav footer-nav text-dark">
                 <li className="nav-item">
-                  <Link className="nav-link">Portfolio</Link>
+                  <NavLink
+                    to="/portfolio"
+                    state={{ navProp: "design" }}
+                    className="nav-link"
+                  >
+                    Design
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link">About</Link>
+                  <NavLink
+                    to="/portfolio"
+                    state={{ navProp: "social-media" }}
+                    className="nav-link"
+                  >
+                    Social Media
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link">Our Blogs</Link>
+                  <NavLink
+                    to="/portfolio"
+                    state={{ navProp: "branding" }}
+                    className="nav-link"
+                  >
+                    Branding
+                  </NavLink>
                 </li>
               </ul>
             </div>
@@ -61,13 +79,24 @@ const Footer = () => {
               <h5>Company</h5>
               <ul className="navbar-nav footer-nav text-dark">
                 <li className="nav-item">
-                  <Link className="nav-link">Portfolio</Link>
+                  <NavLink to="/" className="nav-link">
+                    Home
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link">About</Link>
+                  <NavLink to="/portfolio" className="nav-link">
+                    Portfolio
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link">Our Blogs</Link>
+                  <NavLink to="/contact" className="nav-link">
+                    Contact
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink to="/about" className="nav-link">
+                    About
+                  </NavLink>
                 </li>
               </ul>
             </div>
