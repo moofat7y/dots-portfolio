@@ -667,7 +667,6 @@ footer {
           img {
             transform: scale(1);
           }
-          box-shadow: 0 10px 15px 0 #10335736;
         }
 
         &::before {
@@ -675,18 +674,18 @@ footer {
           position: absolute;
           top: 0;
           right: 0;
-          border: 15px solid;
+          border: 12px solid;
           border-color: $danger $danger transparent transparent;
-          z-index: 5;
+          z-index: 6;
         }
         &::after {
           content: "";
           position: absolute;
           top: -9px;
           right: -75px;
-          width: 221px;
+          width: 210px;
           height: 10px;
-          background-color: $primary;
+          background-color: $primary !important;
           z-index: 5;
           transform: rotateZ(45deg);
         }

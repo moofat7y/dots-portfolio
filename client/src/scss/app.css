@@ -11584,7 +11584,6 @@ footer .social a:hover {
 }
 .portfolio .design .images .thumbnail-inner:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 15px 0 rgba(16, 51, 87, 0.2117647059);
 }
 .portfolio .design .images .thumbnail-inner:hover img {
   transform: scale(1);
@@ -11594,18 +11593,18 @@ footer .social a:hover {
   position: absolute;
   top: 0;
   right: 0;
-  border: 15px solid;
+  border: 12px solid;
   border-color: #b92026 #b92026 transparent transparent;
-  z-index: 5;
+  z-index: 6;
 }
 .portfolio .design .images .thumbnail-inner::after {
   content: "";
   position: absolute;
   top: -9px;
   right: -75px;
-  width: 221px;
+  width: 210px;
   height: 10px;
-  background-color: #f2f2f2;
+  background-color: #f2f2f2 !important;
   z-index: 5;
   transform: rotateZ(45deg);
 }/*# sourceMappingURL=app.css.map */
