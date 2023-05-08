@@ -40,7 +40,7 @@ const Header = () => {
           </div>
           <div className="offcanvas-body">
             <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <NavLink to="" className="nav-link">
+              <NavLink to="/" className="nav-link">
                 Home
               </NavLink>
               <NavLink to="/about" className="nav-link">
