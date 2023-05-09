@@ -1,5 +1,6 @@
 import React from "react";
 import { design_images } from "../../utils/helper";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Design = () => {
   const images_list = design_images?.map((image, index) => {
@@ -7,7 +8,12 @@ const Design = () => {
       <div key={index} className="col-md-6 col-lg-4 p-0">
         <div className="thumbnail p-2">
           <div className="thumbnail-inner rounded-3">
-            <img className="ratio ratio-4x3 rounded-3" src={image} alt="" />
+            <LazyLoadImage
+              effect="blur"
+              className=" rounded-3 w-100 h-100"
+              src={image}
+              alt=""
+            />
           </div>
         </div>
       </div>

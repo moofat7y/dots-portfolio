@@ -13,7 +13,7 @@ const Branding = () => {
     );
   });
   return (
-    <section className="branding bg-primary pb-5 pt-120">
+    <section id="branding" className="branding bg-primary pb-5 pt-120">
       <div className="container">
         <SectionMainHeader
           title="Top clients"

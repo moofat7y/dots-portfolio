@@ -7,7 +7,7 @@ import Branding from "../home/Branding";
 import SocialMedia from "./SocialMedia";
 const Popular = () => {
   return (
-    <section className="design bg-primary pb-5 pt-120">
+    <section id="design" className="design bg-primary pb-5 pt-120">
       <SectionMainHeader
         title="Populer"
         header="Design"

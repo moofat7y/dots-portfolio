@@ -8,9 +8,11 @@ const Portfolio = () => {
   useEffect(() => {
     if (state?.state?.navProp) {
       const sec = document.getElementsByClassName(`${state.state.navProp}`);
+      console.log(sec[0]);
       sec[0].scrollIntoView({ behavior: "smooth" });
     }
-  }, [state.state]);
+    // return () => (state.state.navProp = undefined);
+  }, [state?.state]);
   return (
     <div className="portfolio">
       <SectionBanner header="Portfolio" main="Home" link="Portfolio" />

@@ -668,9 +668,11 @@ footer {
         transition: 0.3s ease-in-out;
         position: relative;
         overflow: hidden;
+        aspect-ratio: 4/2.6;
         img {
           transform: scale(1.1);
           transition: 0.4s ease-in-out;
+          aspect-ratio: 4/2.6;
         }
         &:hover {
           transform: translateY(-3px);
@@ -691,13 +693,11 @@ footer {
         &::after {
           content: "";
           position: absolute;
-          top: -9px;
-          right: -75px;
-          width: 210px;
-          height: 10px;
-          background-color: $primary !important;
+          top: 0;
+          right: 0;
+          border: 16px solid;
+          border-color: $primary $primary transparent transparent;
           z-index: 5;
-          transform: rotateZ(45deg);
         }
       }
     }

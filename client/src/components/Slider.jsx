@@ -9,6 +9,7 @@ import "../scss/app.css";
 
 // import required modules
 import { Pagination } from "swiper";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Slider = ({ data }) => {
   SwiperCore.use([Autoplay]);
@@ -16,8 +17,13 @@ const Slider = ({ data }) => {
   const images_list = data?.map((image, index) => {
     return (
       <SwiperSlide key={index}>
-        <div className="outer-img px-2 px-md-0">
-          <img src={image} className="ratio ratio-1x3 rounded-3" alt="" />
+        <div className="outer-img px-2 bg-primary px-md-0">
+          <LazyLoadImage
+            effect="blur"
+            src={image}
+            className="ratio ratio-1x3 rounded-3"
+            alt=""
+          />
         </div>
       </SwiperSlide>
     );

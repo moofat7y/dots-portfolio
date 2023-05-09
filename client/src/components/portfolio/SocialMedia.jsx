@@ -1,6 +1,7 @@
 import React from "react";
 import SectionMainHeader from "../SectionMainHeader";
 import { design_images } from "../../utils/helper";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const SocialMedia = () => {
   const images_list = design_images?.map((image, index) => {
@@ -8,14 +9,21 @@ const SocialMedia = () => {
       <div key={index} className="col-md-6 col-lg-4 p-0">
         <div className="thumbnail p-2">
           <div className="thumbnail-inner rounded-3">
-            <img className="ratio ratio-4x3 rounded-3" src={image} alt="" />
+            <LazyLoadImage
+              effect="blur"
+              className=" w-100 h-100 rounded-3"
+              src={image}
+              width="100%"
+              height="100%"
+              alt=""
+            />
           </div>
         </div>
       </div>
     );
   });
   return (
-    <section className="social-media pt-120 pb-5">
+    <section id="social-media" className="social-media pt-120 pb-5">
       <SectionMainHeader
         title="Social Media"
         header="Design"

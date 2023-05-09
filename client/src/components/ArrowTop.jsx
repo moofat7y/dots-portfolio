@@ -1,15 +1,19 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { IoIosArrowUp } from "react-icons/io";
 
 const ArrowTop = () => {
   const scroll = useRef();
-  window.addEventListener("scroll", function () {
-    if (this.scrollY > 200) {
-      scroll?.current?.classList?.add("active");
-    } else {
-      scroll?.current?.classList?.remove("active");
-    }
-  });
+  useEffect(() => {
+    window.addEventListener("scroll", function () {
+      if (this.scrollY > 200) {
+        scroll?.current?.classList?.add("active");
+      } else {
+        scroll?.current?.classList?.remove("active");
+      }
+    });
+
+    return () => window.removeEventListener("scroll");
+  }, []);
   return (
     <div
       id="top-arrow"
