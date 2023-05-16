@@ -5,8 +5,6 @@ const Banner = () => {
   return (
     <section className="home_banner pt-120 bg-primary pb-4 pb-md-5">
       <div className="layer position-relative pt-120">
-        <div className="position-absolute d-none d-md-block circle circle-danger"></div>
-        <div className="position-absolute d-none d-md-block circle circle-secondary"></div>
         <div className="container text-center">
           <div className="d-flex justify-content-center header">
             <h1 className="fw-bolder text-grad_banner lh-bg text-center">

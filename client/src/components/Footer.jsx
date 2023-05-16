@@ -5,7 +5,7 @@ import { AiOutlineInstagram } from "react-icons/ai";
 import { GrFacebookOption } from "react-icons/gr";
 const Footer = () => {
   return (
-    <footer className="bg-black text-white">
+    <footer className="bg-secondary text-white">
       <div className="container">
         <div className="d-flex gap-3 flex-column flex-md-row justify-content-between py-5 ">
           <h2 className="fw-bold">
