@@ -11509,6 +11509,11 @@ footer .social a:hover {
   box-shadow: 0 10px 15px 0 rgba(16, 51, 87, 0.2117647059) !important;
 }
 
+.portfolio .outer-img.loading div {
+  background-color: rgb(198, 198, 198);
+  aspect-ratio: 1/1.3;
+  animation: imgLoad 3s ease-in-out infinite alternate;
+}
 .portfolio .design .images .thumbnail-inner {
   transition: 0.3s ease-in-out;
   position: relative;
@@ -11543,4 +11548,13 @@ footer .social a:hover {
   border: 16px solid;
   border-color: #f2f2f2 #f2f2f2 transparent transparent;
   z-index: 5;
+}
+
+@keyframes imgLoad {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
 }/*# sourceMappingURL=app.css.map */

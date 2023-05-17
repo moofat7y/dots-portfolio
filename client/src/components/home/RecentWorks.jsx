@@ -15,42 +15,20 @@ const RecentWorks = () => {
           <div className="box p-3 p-sm-3 col-lg-4 col-md-6 col-sm-6 col-12">
             <NavLink
               to="/portfolio"
-              state={{ navProp: "design" }}
+              state={{ navProp: "logo-sec" }}
               className="position-relative nav-link p-4 d-flex flex-column justify-content-end thumbnail"
             >
               <div className="content text-white">
                 <span className="text-light d-block mb-3">
                   Application Development
                 </span>
-                <h3 className="fw-bold">Design</h3>
+                <h3 className="fw-bold">Logo</h3>
               </div>
               <div className="inner">
                 <img
                   className=""
                   loading="lazy"
                   src="http://rainbowit.net/themes/imroz/wp-content/uploads/2021/12/pt-7-390x532.jpg"
-                  alt=""
-                />
-              </div>
-            </NavLink>
-          </div>
-          <div className="box p-3 p-sm-3 col-lg-4 col-md-6 col-sm-6 col-12">
-            <NavLink
-              to="/portfolio"
-              state={{ navProp: "social-media" }}
-              className="position-relative nav-link p-4 d-flex flex-column justify-content-end thumbnail"
-            >
-              <div className="content text-white">
-                <span className="text-light d-block mb-3">
-                  Application Development
-                </span>
-                <h3 className="fw-bold">Social Media</h3>
-              </div>
-              <div className="inner">
-                <img
-                  className=""
-                  loading="lazy"
-                  src="http://rainbowit.net/themes/imroz/wp-content/uploads/2021/12/pt-8-390x532.jpg"
                   alt=""
                 />
               </div>
@@ -73,6 +51,28 @@ const RecentWorks = () => {
                   className=""
                   loading="lazy"
                   src="http://rainbowit.net/themes/imroz/wp-content/uploads/2021/05/dp-big-portfolio-03-390x532.jpg"
+                  alt=""
+                />
+              </div>
+            </NavLink>
+          </div>
+          <div className="box p-3 p-sm-3 col-lg-4 col-md-6 col-sm-6 col-12">
+            <NavLink
+              to="/portfolio"
+              state={{ navProp: "social-media" }}
+              className="position-relative nav-link p-4 d-flex flex-column justify-content-end thumbnail"
+            >
+              <div className="content text-white">
+                <span className="text-light d-block mb-3">
+                  Application Development
+                </span>
+                <h3 className="fw-bold">Social Media</h3>
+              </div>
+              <div className="inner">
+                <img
+                  className=""
+                  loading="lazy"
+                  src="http://rainbowit.net/themes/imroz/wp-content/uploads/2021/12/pt-8-390x532.jpg"
                   alt=""
                 />
               </div>

@@ -551,6 +551,13 @@ footer {
 
 /////////////// Portfolio ////////////////
 .portfolio {
+  .outer-img.loading {
+    div {
+      background-color: rgb(198, 198, 198);
+      aspect-ratio: 1/1.3;
+      animation: imgLoad 3s ease-in-out infinite alternate;
+    }
+  }
   .design {
     .images {
       .thumbnail-inner {
@@ -590,5 +597,15 @@ footer {
         }
       }
     }
+  }
+}
+
+@keyframes imgLoad {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
   }
 }
