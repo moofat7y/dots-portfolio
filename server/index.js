@@ -17,7 +17,11 @@ const PORT = process.env.PORT || 8080;
 dbConnect();
 
 const corsOptions = {
-  origin: ["http://localhost:5173", "http://localhost:5174"],
+  origin: [
+    "http://localhost:5173",
+    "http://localhost:5174",
+    "https://dots-portfolio-admin.vercel.app",
+  ],
   credentials: true,
 };
 app.use(cors(corsOptions));
