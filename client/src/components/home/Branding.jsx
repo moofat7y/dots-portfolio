@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import SectionMainHeader from "../SectionMainHeader";
-import { barnding_images } from "../../utils/helper";
 import { useSelector } from "react-redux";
 
 const Branding = () => {
