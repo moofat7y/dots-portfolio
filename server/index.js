@@ -21,6 +21,7 @@ const corsOptions = {
     "http://localhost:5173",
     "http://localhost:5174",
     "https://dots-portfolio-admin.vercel.app",
+    "https://dots-portfolio-moofat7y.vercel.app",
   ],
   credentials: true,
 };
