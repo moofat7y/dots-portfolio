@@ -1,5 +1,5 @@
 import axios from "axios";
-const baseUrl = "https://dots-portfolio-moofat7y.vercel.app/api/";
+const baseUrl = "https://dots-portfolio.onrender.com/api/";
 
 const api = axios.create({ baseURL: baseUrl, withCredentials: true });
 api.interceptors.request.use(
