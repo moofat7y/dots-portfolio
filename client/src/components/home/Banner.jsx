@@ -8,9 +8,9 @@ const Banner = () => {
         <div className="container text-center">
           <div className="d-flex justify-content-center header">
             <h1 className="fw-bolder text-grad_banner lh-bg text-center">
-              Design Driven
-              <br /> Development Your
-              <br /> Web Products.
+              The Dots Of
+              <br /> Your
+              <br /> Search.
             </h1>
           </div>
         </div>

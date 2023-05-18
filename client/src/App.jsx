@@ -18,20 +18,22 @@ import { getAllPopImages } from "./store/features/populer/popSlice";
 import { getAllLogoImages } from "./store/features/logo/logoSlice";
 import { getAllSocialImages } from "./store/features/social/socialSlice";
 import { getAllBrandImages } from "./store/features/brand/brandSlice";
+import WhatsApp from "./components/WhatsApp";
 
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(getAllPopImages({ query: "limit=9&page=1" }));
-    dispatch(getAllLogoImages({ query: "limit=9&page=1" }));
-    dispatch(getAllSocialImages({ query: "limit=9&page=1" }));
-    dispatch(getAllBrandImages({ query: "limit=9&page=1" }));
+    dispatch(getAllPopImages({ query: "limit=9" }));
+    dispatch(getAllLogoImages({ query: "limit=9" }));
+    dispatch(getAllSocialImages({ query: "limit=9" }));
+    dispatch(getAllBrandImages({ query: "limit=9" }));
   }, []);
   return (
     <Suspense fallback={<Loading />}>
       <BrowserRouter>
         <Header />
         <ScrollToTop />
+        <WhatsApp />
         <ArrowTop />
         <Routes>
           <Route path="/" element={<Home />} />

@@ -11199,8 +11199,8 @@ button.fadeup:hover {
 }
 .top-arrow {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 88px;
+  right: 20px;
   cursor: pointer;
   z-index: 999;
   width: 50px;
@@ -11556,5 +11556,28 @@ footer .social a:hover {
   }
   50% {
     opacity: 0.3;
+  }
+}
+.whats-app {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 999;
+  width: 50px;
+  height: 50px;
+  line-height: 46px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: shadow-anim 2s linear infinite alternate;
+}
+
+@keyframes shadow-anim {
+  100% {
+    box-shadow: 0 0 0 10px rgba(16, 51, 87, 0.1098039216), 0 0 0 15px rgba(16, 51, 87, 0.1098039216);
   }
 }/*# sourceMappingURL=app.css.map */

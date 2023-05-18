@@ -25,20 +25,17 @@ const CompanyRefresh = () => {
                 <div className="icon bg-danger rounded-circle mb-4">
                   <FiSend className="fs-3 text-white" />
                 </div>
-                <h2 className="fs-1 fw-bold mb-5">
-                  Refreshingly Unique Company About.
-                </h2>
+                <h2 className="fs-1 fw-bold mb-5">About Us:</h2>
                 <p className="fs-6 fw-light">
-                  Far far away, behind the word mountains, far from the
-                  countries Vokalia and Consonantia, there live the blind texts.
-                  Separated they live in Bookmarksgrove right at the coast of
-                  the Semantics, a large language ocean. <br />
-                  <br /> A small river named Duden flows by their place and
-                  supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences
+                  Dots Hub is a digital marketing agency aiming to make your
+                  Digital channels and social media content closer to your
+                  target audience. <br />
+                  <br />
+                  Through our passion for looking for new trends and innovative
+                  ideas.
                 </p>
-                <Link className="text-grad_link position-relative">
-                  <span className="fw-semibold ">PURCHASE</span>
+                <Link to="/about" className="text-grad_link position-relative">
+                  <span className="fw-semibold ">About Us</span>
                 </Link>
               </div>
             </div>
