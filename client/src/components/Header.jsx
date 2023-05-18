@@ -18,7 +18,7 @@ const Header = () => {
     <nav
       ref={navRef}
       style={{ zIndex: "100" }}
-      className="navbar w-100 fixed-top navbar-expand-md py-md-4"
+      className="navbar w-100 fixed-top navbar-expand-md py-md-3"
     >
       <div className="container-fluid px-md-5">
         <NavLink to="/" className="navbar-brand">

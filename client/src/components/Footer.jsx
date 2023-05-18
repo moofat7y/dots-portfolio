@@ -1,8 +1,9 @@
 import React from "react";
 import Logo from "../assets/Asset1.png";
 import { Link, NavLink } from "react-router-dom";
-import { AiOutlineInstagram } from "react-icons/ai";
+import { AiOutlineInstagram, AiOutlineWhatsApp } from "react-icons/ai";
 import { GrFacebookOption } from "react-icons/gr";
+import { BsWhatsapp } from "react-icons/bs";
 const Footer = () => {
   return (
     <footer className="bg-secondary text-white">
@@ -140,6 +141,14 @@ const Footer = () => {
                   target="_blank"
                 >
                   <GrFacebookOption />
+                </a>
+
+                <a
+                  className="fs-4 text-dark"
+                  href="https://wa.me/201005550942"
+                  target="_blank"
+                >
+                  <AiOutlineWhatsApp />
                 </a>
               </div>
             </div>
