@@ -1,11 +1,24 @@
-import React from "react";
+import React, { useRef } from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "../assets/Asset1.png";
 const Header = () => {
+  const navRef = useRef();
+  let currentScroll = 0;
+  window.addEventListener("scroll", (e) => {
+    if (e.currentTarget.scrollY < currentScroll) {
+      navRef?.current?.classList.add("show");
+      navRef?.current?.classList.remove("hide");
+    } else {
+      navRef?.current?.classList.remove("show");
+      navRef?.current?.classList.add("hide");
+    }
+    currentScroll = e.currentTarget.scrollY;
+  });
   return (
     <nav
+      ref={navRef}
       style={{ zIndex: "100" }}
-      className="navbar position-absolute w-100 navbar-expand-md py-md-4"
+      className="navbar w-100 fixed-top navbar-expand-md py-md-4"
     >
       <div className="container-fluid px-md-5">
         <NavLink to="/" className="navbar-brand">

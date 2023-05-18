@@ -212,6 +212,17 @@ button.fadeup {
 }
 
 .navbar {
+  background-color: $primary;
+  transition: 0.3s ease-in-out;
+  transform: translateY(0%);
+
+  &.show {
+    position: fixed !important;
+    top: 0px;
+  }
+  &.hide {
+    transform: translateY(-100%);
+  }
   .navbar-nav {
     .nav-link {
       font-weight: 600;

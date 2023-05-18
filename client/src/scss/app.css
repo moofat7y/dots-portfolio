@@ -11226,6 +11226,18 @@ button.fadeup:hover {
   visibility: visible;
 }
 
+.navbar {
+  background-color: #f2f2f2;
+  transition: 0.3s ease-in-out;
+  transform: translateY(0%);
+}
+.navbar.show {
+  position: fixed !important;
+  top: 0px;
+}
+.navbar.hide {
+  transform: translateY(-100%);
+}
 .navbar .navbar-nav .nav-link {
   font-weight: 600;
   position: relative;
