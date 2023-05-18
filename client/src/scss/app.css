@@ -11229,7 +11229,6 @@ button.fadeup:hover {
 .navbar {
   background-color: #f2f2f2;
   transition: 0.3s ease-in-out;
-  transform: translateY(0%);
 }
 .navbar.show {
   position: fixed !important;
