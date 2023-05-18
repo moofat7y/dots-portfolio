@@ -212,11 +212,11 @@ button.fadeup {
 }
 
 .navbar {
-  background-color: $primary;
   transition: 0.3s ease-in-out;
 
   &.show {
     position: fixed !important;
+    background-color: $primary;
     top: 0px;
   }
   &.hide {
