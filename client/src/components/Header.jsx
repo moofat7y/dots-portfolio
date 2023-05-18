@@ -5,14 +5,19 @@ const Header = () => {
   const navRef = useRef();
   let currentScroll = 0;
   window.addEventListener("scroll", (e) => {
-    if (e.currentTarget.scrollY < currentScroll) {
-      navRef?.current?.classList.add("show");
-      navRef?.current?.classList.remove("hide");
+    if (e.currentTarget.scrollY > 0) {
+      if (e.currentTarget.scrollY < currentScroll) {
+        navRef?.current?.classList.add("show");
+        navRef?.current?.classList.remove("hide");
+      } else {
+        navRef?.current?.classList.remove("show");
+        navRef?.current?.classList.add("hide");
+      }
+      currentScroll = e.currentTarget.scrollY;
     } else {
+      navRef?.current?.classList.remove("hide");
       navRef?.current?.classList.remove("show");
-      navRef?.current?.classList.add("hide");
     }
-    currentScroll = e.currentTarget.scrollY;
   });
   return (
     <nav
