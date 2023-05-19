@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Logo from "../assets/Asset1.png";
 const Header = () => {
   const navRef = useRef();
@@ -26,9 +26,9 @@ const Header = () => {
       className="navbar w-100 fixed-top navbar-expand-md py-md-3"
     >
       <div className="container-fluid px-md-5">
-        <NavLink to="/" className="navbar-brand">
+        <Link to="/" className="navbar-brand">
           <img className="logo" src={Logo} alt="" />
-        </NavLink>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"

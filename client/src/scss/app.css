@@ -11069,7 +11069,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .logo {
-  width: calc(3rem + 5vw);
+  width: calc(3rem + 4.2vw);
 }
 
 button.fadeup {
@@ -11231,6 +11231,7 @@ button.fadeup:hover {
 }
 .navbar.show {
   position: fixed !important;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
   background-color: #f2f2f2;
   top: 0px;
 }
