@@ -26,7 +26,7 @@ function App() {
     dispatch(getAllPopImages({ query: "limit=9" }));
     dispatch(getAllLogoImages({ query: "limit=9" }));
     dispatch(getAllSocialImages({ query: "limit=9" }));
-    dispatch(getAllBrandImages({ query: "limit=9" }));
+    dispatch(getAllBrandImages({ query: "" }));
   }, []);
   return (
     <Suspense fallback={<Loading />}>
