@@ -11,6 +11,14 @@ router.get("/social", imagesCtrl.getAllSocialImages);
 
 router.get("/brand", imagesCtrl.getAllBrandImages);
 
+router.patch(
+  "/brand/link/:imgId",
+  body("link", "Please enter a valid link").exists().notEmpty().isString(),
+  isAuth,
+  isAdmin,
+  imagesCtrl.updateImageLink
+);
+
 router.delete("/populer", isAuth, isAdmin, imagesCtrl.deletePopImage);
 
 router.delete("/logo", isAuth, isAdmin, imagesCtrl.deleteLogoImage);

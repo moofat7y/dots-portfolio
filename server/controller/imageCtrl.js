@@ -186,6 +186,28 @@ exports.deleteSocialImage = async (req, res, next) => {
   }
 };
 
+exports.updateImageLink = async (req, res, next) => {
+  const imgId = req.params.imgId;
+  const { link } = req.body;
+  const errors = validationResult(req);
+  try {
+    if (!errors.isEmpty()) {
+      const error = new Error(errors.array()[0].msg);
+      error.statusCode = 403;
+      throw error;
+    }
+    const newImage = await BrandImages.findByIdAndUpdate(
+      imgId,
+      { link },
+      { new: true }
+    );
+
+    res.status(200).json(newImage);
+  } catch (error) {
+    next(error);
+  }
+};
+
 exports.deleteBrandImage = async (req, res, next) => {
   const imgId = req.query.imageId;
 
