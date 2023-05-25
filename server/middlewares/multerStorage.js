@@ -99,6 +99,7 @@ const brandImgResize = async (req, res, next) => {
   );
   next();
 };
+
 module.exports = {
   uploadPhoto,
   populerImgResize,

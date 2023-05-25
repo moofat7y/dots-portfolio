@@ -44,5 +44,4 @@ router.put(
   brandImgResize,
   uploadCtrl.uploadBrand
 );
-
 module.exports = router;
