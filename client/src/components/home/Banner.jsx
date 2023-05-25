@@ -9,8 +9,7 @@ const Banner = () => {
           <div className="d-flex justify-content-center header">
             <h1 className="fw-bolder text-grad_banner lh-bg text-center">
               The Dots Of
-              <br /> Your
-              <br /> Search.
+              <br /> Your Search.
             </h1>
           </div>
         </div>
@@ -20,28 +19,30 @@ const Banner = () => {
         <div className="offers d-flex justify-content-center gap-3 gap-xl-5 flex-wrap flex-lg-nowrap">
           <div className="d-flex flex-column align-items-center justify-content-center">
             <CiMedal className="text-danger display-4 mb-3" />
-            <h3 className="fw-bolder mb-2">Award Design</h3>
-            <p className="fw-light">
-              There are many variations variations of passages of Lorem Ipsum
-              available.
-            </p>
-          </div>
-
-          <div className="d-flex flex-column align-items-center justify-content-center">
-            <CiEdit className="text-danger display-4 mb-3" />
-            <h3 className="fw-bolder mb-2">Design & Creative</h3>
-            <p className="fw-light">
-              Passages there are many variations variations of of Lorem Ipsum
-              available.
+            <h3 className="fw-bolder mb-2 fs-4">Creative Designs</h3>
+            <p className="fw-light text-break">
+              Developing original concepts for your designs.
             </p>
           </div>
 
           <div className="d-flex flex-column align-items-center justify-content-center">
             <CiMobile2 className="text-danger display-4 mb-3" />
-            <h3 className="fw-bolder mb-2">App Development</h3>
-            <p className="fw-light">
-              Variations There are many variations of passages of Lorem Ipsum
-              available.
+            <h3 className="fw-bolder mb-2 fs-4">
+              Web Development
+              <br /> & Mobile Applications
+            </h3>
+            <p className="fw-light text-break">
+              Creating a website and mobile application
+              <br /> from scratch for your company to increase revenue.
+            </p>
+          </div>
+
+          <div className="d-flex flex-column align-items-center justify-content-center">
+            <CiEdit className="text-danger display-4 mb-3" />
+            <h3 className="fw-bolder mb-2 fs-4">Strategic Plans</h3>
+            <p className="fw-light text-break">
+              Making strategies based on research into <br />
+              your channels and rivals to get the greatest outcomes.
             </p>
           </div>
         </div>

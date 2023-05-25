@@ -1,9 +1,8 @@
 import React from "react";
-import Logo from "../assets/Asset1.png";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { AiOutlineInstagram, AiOutlineWhatsApp } from "react-icons/ai";
 import { GrFacebookOption } from "react-icons/gr";
-import { BsWhatsapp } from "react-icons/bs";
+import Logo from "../assets/website.png";
 const Footer = () => {
   return (
     <footer className="bg-secondary text-white">
@@ -22,13 +21,14 @@ const Footer = () => {
           <div className="col-12 col-sm-6 col-lg-5">
             <div className="box p-2 pe-lg-5">
               <div
-                style={{ width: "80px", height: "80px" }}
-                className="bg-primary p-4 rounded-circle mb-5"
+                style={{ width: "100px", height: "100px" }}
+                className=" mb-5"
               >
                 <img
                   style={{ objectFit: "contain" }}
                   className="w-100 h-100"
                   src={Logo}
+                  loading="lazy"
                   alt=""
                 />
               </div>

@@ -58,6 +58,12 @@ const uploadBrandImages = async (data) => {
 
   return response.data;
 };
+
+const updateBrandLink = async (imgId, link) => {
+  const response = await api.patch(`/image/brand/link/${imgId}`, link);
+  return response.data;
+};
+
 const deleteBrandImage = async (public_id) => {
   const response = await api.delete(`/image/brand?imageId=${public_id}`);
 
@@ -76,6 +82,7 @@ const imagesService = {
   getAllBrandImages,
   uploadBrandImages,
   deleteBrandImage,
+  updateBrandLink,
 };
 
 export default imagesService;

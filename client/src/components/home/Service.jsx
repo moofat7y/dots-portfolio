@@ -11,6 +11,9 @@ import { AiOutlineMobile } from "react-icons/ai";
 import { FiTrendingUp } from "react-icons/fi";
 import { SiNintendogamecube } from "react-icons/si";
 import { MdOutlineCreate } from "react-icons/md";
+import { RiEmotionLaughLine } from "react-icons/ri";
+import { SiWebmoney } from "react-icons/si";
+import { MdOutlineSlowMotionVideo } from "react-icons/md";
 const Service = () => {
   return (
     <section className="service bg-primary pb-5 pt-120">
@@ -27,12 +30,10 @@ but the majority have suffered alteration.`}
             <div className="item h-100 bg-light py-5 px-4 rounded-3 text-start">
               <IoLogoAmplify className="fs-1 text-danger mb-3" />
               <div className="content">
-                <h3 className="fs-5 fw-semibold mb-4">
-                  Branding (Logo - Full identity)
-                </h3>
+                <h3 className="fs-5 fw-semibold mb-4">Branding</h3>
                 <p className="text-dark mb-0  fs-6">
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority.
+                  Building a complete identity for your company to reflect the
+                  character of your brand.
                 </p>
               </div>
             </div>
@@ -46,8 +47,8 @@ but the majority have suffered alteration.`}
                   Content strategy & Planning
                 </h3>
                 <p className="text-dark mb-0  fs-6">
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority.
+                  Putting together a research-based content strategy to maximize
+                  your organic reach.
                 </p>
               </div>
             </div>
@@ -59,8 +60,21 @@ but the majority have suffered alteration.`}
               <div className="content">
                 <h3 className="fs-5 fw-semibold mb-4">Content Creation</h3>
                 <p className="text-dark mb-0  fs-6">
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority.
+                  Developing a content strategy that works for each of your
+                  business's channels will help you attract new clients.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="box  p-3 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div className="item h-100 bg-light py-5 px-4 rounded-3 text-start">
+              <RiEmotionLaughLine className="fs-1 text-danger mb-4" />
+              <div className="content">
+                <h3 className="fs-5 fw-semibold mb-3">Motion Graphic</h3>
+                <p className="text-dark mb-0  fs-6">
+                  Through it, we can create innovative ways to communicate with
+                  the viewer, and add depth to your story.
                 </p>
               </div>
             </div>
@@ -74,8 +88,8 @@ but the majority have suffered alteration.`}
                   Social Media Management
                 </h3>
                 <p className="text-dark mb-0  fs-6">
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority.
+                  Maintaining all of your channels and replying to all of your
+                  DMs and comments will save you time and work.
                 </p>
               </div>
             </div>
@@ -83,38 +97,14 @@ but the majority have suffered alteration.`}
 
           <div className="box  p-3 col-lg-4 col-md-6 col-sm-6 col-12">
             <div className="item h-100 bg-light py-5 px-4 rounded-3 text-start">
-              <IoPersonOutline className="fs-1 text-danger mb-4" />
+              <SiWebmoney className="fs-1 text-danger mb-4" />
               <div className="content">
-                <h3 className="fs-5 fw-semibold mb-3">Moderation</h3>
+                <h3 className="fs-5 fw-semibold mb-3">
+                  Web Development & Mobile Application
+                </h3>
                 <p className="text-dark mb-0  fs-6">
-                  Contrary to popular belief, Lorem Ipsum is not simply random
-                  text. It has roots in all.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="box  p-3 col-lg-4 col-md-6 col-sm-6 col-12">
-            <div className="item h-100 bg-light py-5 px-4 rounded-3 text-start">
-              <RxDesktop className="fs-1 text-danger mb-4" />
-              <div className="content">
-                <h3 className="fs-5 fw-semibold mb-3">Website Development</h3>
-                <p className="text-dark mb-0  fs-6">
-                  It is a long established fact that a reader will be distracted
-                  by the readable.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="box  p-3 col-lg-4 col-md-6 col-sm-6 col-12">
-            <div className="item h-100 bg-light py-5 px-4 rounded-3 text-start">
-              <AiOutlineMobile className="fs-1 text-danger mb-4" />
-              <div className="content">
-                <h3 className="fs-5 fw-semibold mb-3">Mobile Development</h3>
-                <p className="text-dark mb-0  fs-6">
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority.
+                  Developing mobile applications and user-friendly websites to
+                  support your business.
                 </p>
               </div>
             </div>
@@ -138,8 +128,23 @@ but the majority have suffered alteration.`}
               <div className="content">
                 <h3 className="fs-5 fw-semibold mb-3">SEO</h3>
                 <p className="text-dark mb-0  fs-6">
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority.
+                  Putting together a set of techniques aimed at enhancing the
+                  look and positioning of web sites in organic search results.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="box  p-3 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div className="item h-100 bg-light py-5 px-4 rounded-3 text-start">
+              <MdOutlineSlowMotionVideo className="fs-1 text-danger mb-4" />
+              <div className="content">
+                <h3 className="fs-5 fw-semibold mb-3">
+                  Photography & Videography
+                </h3>
+                <p className="text-dark mb-0  fs-6">
+                  Supplying a videographer and a photographer to record your
+                  events and use the footage to support your channels.
                 </p>
               </div>
             </div>

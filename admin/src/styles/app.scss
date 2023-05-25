@@ -51,12 +51,14 @@ section {
           display: none !important;
         }
       }
-      .delete {
+      .delete,
+      .edit {
         transition: 0.3s ease-in-out;
         opacity: 0;
       }
       &:hover {
-        .delete {
+        .delete,
+        .edit {
           opacity: 1;
         }
       }

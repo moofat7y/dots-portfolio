@@ -10861,11 +10861,13 @@ section {
 .popular .images-list .thumbnail-inner.loading .delete {
   display: none !important;
 }
-.popular .images-list .thumbnail-inner .delete {
+.popular .images-list .thumbnail-inner .delete,
+.popular .images-list .thumbnail-inner .edit {
   transition: 0.3s ease-in-out;
   opacity: 0;
 }
-.popular .images-list .thumbnail-inner:hover .delete {
+.popular .images-list .thumbnail-inner:hover .delete,
+.popular .images-list .thumbnail-inner:hover .edit {
   opacity: 1;
 }
 

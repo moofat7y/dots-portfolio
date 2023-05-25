@@ -39,6 +39,18 @@ export const uploadBrandImages = createAsyncThunk(
   }
 );
 
+export const updateBrandLink = createAsyncThunk(
+  "images/update-link",
+  async ({ imgId, data }, thunkAPI) => {
+    try {
+      const response = await imagesService.updateBrandLink(imgId, data);
+      return response;
+    } catch (error) {
+      return thunkAPI.rejectWithValue(error.response.data.message);
+    }
+  }
+);
+
 export const deleteBrandImage = createAsyncThunk(
   "images/delete-brand",
   async ({ public_id }, thunkAPI) => {
@@ -83,6 +95,11 @@ const brandSlice = createSlice({
           (image) => image.public_id !== action.meta.arg.public_id
         );
         state.count = state.count - 1;
+      })
+      .addCase(updateBrandLink.fulfilled, (state, action) => {
+        state.images = state.images.map((image) =>
+          image.id === action.meta.arg.imgId ? action.payload : image
+        );
       });
   },
 });

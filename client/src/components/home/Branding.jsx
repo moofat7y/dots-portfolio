@@ -7,9 +7,11 @@ const Branding = () => {
   const branding_list = images?.map((image) => {
     return (
       <li key={image._id} className="col-6 col-sm-4 col-lg-3 col-xl-2">
-        <div className="box p-4">
-          <img className="w-100 h-100" src={image.secure_url} alt="" />
-        </div>
+        <a target="_blank" href={image.link ? image.link : "#"}>
+          <div className="box p-4">
+            <img className="w-100 h-100" src={image.secure_url} alt="" />
+          </div>
+        </a>
       </li>
     );
   });
