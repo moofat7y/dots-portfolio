@@ -93,7 +93,8 @@ const Service = () => {
               <div className="content">
                 <h3 className="fs-5 fw-semibold mb-3">Media Buying</h3>
                 <p className="text-dark mb-0  fs-6">
-                  The first line of Lorem Ipsum., Lorem ipsum dolor sit amet..
+                  putting your money in the right order to increase your
+                  earnings with regular updates.
                 </p>
               </div>
             </div>

@@ -39,11 +39,7 @@ const Design = () => {
   });
   return (
     <section id="logo-sec" className="all-design design pt-120 pb-5">
-      <SectionMainHeader
-        title="Logo"
-        header="Design"
-        dec="There are many variations of passages of Lorem Ipsum available,<br/>but the majority have suffered alteration."
-      />
+      <SectionMainHeader title="Logo" header="Design" />
       <div className="container">
         {count === 0 ? (
           <div

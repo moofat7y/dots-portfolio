@@ -41,11 +41,7 @@ const SocialMedia = () => {
   });
   return (
     <section id="social-media" className="social-media design pt-120 pb-5">
-      <SectionMainHeader
-        title="Social Media"
-        header="Design"
-        dec="There are many variations of passages of Lorem Ipsum available,<br/>but the majority have suffered alteration."
-      />
+      <SectionMainHeader title="Social Media" header="Design" />
       <div className="container">
         {count === 0 ? (
           <div

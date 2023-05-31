@@ -21,9 +21,6 @@ const RecentWorks = () => {
               className="position-relative nav-link p-4 d-flex flex-column justify-content-end thumbnail"
             >
               <div className="content text-white">
-                <span className="text-light d-block mb-3">
-                  Application Development
-                </span>
                 <h3 className="fw-bold">Logo</h3>
               </div>
               <div className="inner">
@@ -38,9 +35,6 @@ const RecentWorks = () => {
               className="position-relative nav-link p-4 d-flex flex-column justify-content-end thumbnail"
             >
               <div className="content text-white">
-                <span className="text-light d-block mb-3">
-                  Application Development
-                </span>
                 <h3 className="fw-bold">Branding</h3>
               </div>
               <div className="inner">
@@ -55,9 +49,6 @@ const RecentWorks = () => {
               className="position-relative nav-link p-4 d-flex flex-column justify-content-end thumbnail"
             >
               <div className="content text-white">
-                <span className="text-light d-block mb-3">
-                  Application Development
-                </span>
                 <h3 className="fw-bold">Social Media</h3>
               </div>
               <div className="inner">
