@@ -1,6 +1,9 @@
 import React from "react";
 import SectionMainHeader from "../SectionMainHeader";
 import { NavLink } from "react-router-dom";
+import BradingLogo from "../../assets/branding.png";
+import SocialLogo from "../../assets/social-media.png";
+import Logo2Logo from "../../assets/Logo2.png";
 const RecentWorks = () => {
   return (
     <section className="recent-work bg-primary pb-5 pt-120">
@@ -8,7 +11,6 @@ const RecentWorks = () => {
         <SectionMainHeader
           title="Our project"
           header="Some of our Recent Works"
-          dec={`There are many variations of passages of Lorem Ipsum available,<br/> but the majority have suffered alteration.`}
         />
 
         <div className="works px-xl-4 mt-4 row">
@@ -25,12 +27,7 @@ const RecentWorks = () => {
                 <h3 className="fw-bold">Logo</h3>
               </div>
               <div className="inner">
-                <img
-                  className=""
-                  loading="lazy"
-                  src="http://rainbowit.net/themes/imroz/wp-content/uploads/2021/12/pt-7-390x532.jpg"
-                  alt=""
-                />
+                <img className="" loading="lazy" src={Logo2Logo} alt="" />
               </div>
             </NavLink>
           </div>
@@ -47,12 +44,7 @@ const RecentWorks = () => {
                 <h3 className="fw-bold">Branding</h3>
               </div>
               <div className="inner">
-                <img
-                  className=""
-                  loading="lazy"
-                  src="http://rainbowit.net/themes/imroz/wp-content/uploads/2021/05/dp-big-portfolio-03-390x532.jpg"
-                  alt=""
-                />
+                <img className="" loading="lazy" src={BradingLogo} alt="" />
               </div>
             </NavLink>
           </div>
@@ -69,12 +61,7 @@ const RecentWorks = () => {
                 <h3 className="fw-bold">Social Media</h3>
               </div>
               <div className="inner">
-                <img
-                  className=""
-                  loading="lazy"
-                  src="http://rainbowit.net/themes/imroz/wp-content/uploads/2021/12/pt-8-390x532.jpg"
-                  alt=""
-                />
+                <img className="" loading="lazy" src={SocialLogo} alt="" />
               </div>
             </NavLink>
           </div>

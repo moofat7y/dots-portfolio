@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { AiOutlineInstagram, AiOutlineWhatsApp } from "react-icons/ai";
 import { GrFacebookOption } from "react-icons/gr";
 import Logo from "../assets/website.png";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 const Footer = () => {
   return (
     <footer className="bg-secondary text-white">
@@ -20,17 +21,21 @@ const Footer = () => {
         <div className="py-5 row">
           <div className="col-12 col-sm-6 col-lg-5">
             <div className="box p-2 pe-lg-5">
-              <div
-                style={{ width: "100px", height: "100px" }}
-                className=" mb-5"
-              >
-                <img
-                  style={{ objectFit: "contain" }}
-                  className="w-100 h-100"
-                  src={Logo}
-                  loading="lazy"
-                  alt=""
-                />
+              <div className="mb-5">
+                <div
+                  style={{
+                    width: "100px",
+                    height: "100px",
+                  }}
+                  className="image d-flex"
+                >
+                  <LazyLoadImage
+                    loading="lazy"
+                    className="w-100 h-100"
+                    src={Logo}
+                    alt=""
+                  />
+                </div>
               </div>
 
               <p className="text-dark">

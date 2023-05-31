@@ -1,6 +1,8 @@
 import React from "react";
 import { FiSend } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import AboutImg from "../../assets/about-us.png";
 const CompanyRefresh = () => {
   return (
     <section className="company-about bg-primary pb-5 pt-120">
@@ -8,9 +10,9 @@ const CompanyRefresh = () => {
         <div className="row">
           <div className="mb-4 mb-md-0 col-12 col-lg-5">
             <div className="thumbnail">
-              <img
+              <LazyLoadImage
                 style={{ width: "543px", height: "auto" }}
-                src="https://res.cloudinary.com/dzlrv81i7/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1683525733/samples/dots-portfolio/about-1_ayqgoe.jpg?_s=public-a"
+                src={AboutImg}
                 className="object-fit-cover w-100 d-block"
                 alt="about-1"
                 decoding="async"

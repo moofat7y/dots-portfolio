@@ -26,6 +26,15 @@ const Banner = () => {
           </div>
 
           <div className="d-flex flex-column align-items-center justify-content-center">
+            <CiEdit className="text-danger display-4 mb-3" />
+            <h3 className="fw-bolder mb-2 fs-4">Strategic Plans</h3>
+            <p className="fw-light text-break">
+              Making strategies based on research into <br />
+              your channels and rivals to get the greatest outcomes.
+            </p>
+          </div>
+
+          <div className="d-flex flex-column align-items-center justify-content-center">
             <CiMobile2 className="text-danger display-4 mb-3" />
             <h3 className="fw-bolder mb-2 fs-4">
               Web Development
@@ -34,15 +43,6 @@ const Banner = () => {
             <p className="fw-light text-break">
               Creating a website and mobile application
               <br /> from scratch for your company to increase revenue.
-            </p>
-          </div>
-
-          <div className="d-flex flex-column align-items-center justify-content-center">
-            <CiEdit className="text-danger display-4 mb-3" />
-            <h3 className="fw-bolder mb-2 fs-4">Strategic Plans</h3>
-            <p className="fw-light text-break">
-              Making strategies based on research into <br />
-              your channels and rivals to get the greatest outcomes.
             </p>
           </div>
         </div>

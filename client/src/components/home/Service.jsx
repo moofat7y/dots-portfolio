@@ -1,13 +1,7 @@
 import React from "react";
 import SectionMainHeader from "../SectionMainHeader";
-import {
-  IoLogoAmplify,
-  IoPersonOutline,
-  IoShareSocialOutline,
-} from "react-icons/io5";
+import { IoLogoAmplify, IoShareSocialOutline } from "react-icons/io5";
 import { TbWaveSine } from "react-icons/tb";
-import { RxDesktop } from "react-icons/rx";
-import { AiOutlineMobile } from "react-icons/ai";
 import { FiTrendingUp } from "react-icons/fi";
 import { SiNintendogamecube } from "react-icons/si";
 import { MdOutlineCreate } from "react-icons/md";
@@ -21,8 +15,6 @@ const Service = () => {
         <SectionMainHeader
           title="What we can do for you"
           header="Services provide for you"
-          dec={`There are many variations of passages of Lorem Ipsum available,<br/>
-but the majority have suffered alteration.`}
         />
 
         <div className="services px-xl-4 mt-4 row">
