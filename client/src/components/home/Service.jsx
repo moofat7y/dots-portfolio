@@ -89,14 +89,11 @@ const Service = () => {
 
           <div className="box  p-3 col-lg-4 col-md-6 col-sm-6 col-12">
             <div className="item h-100 bg-light py-5 px-4 rounded-3 text-start">
-              <SiWebmoney className="fs-1 text-danger mb-4" />
+              <FiTrendingUp className="fs-1 text-danger mb-4" />
               <div className="content">
-                <h3 className="fs-5 fw-semibold mb-3">
-                  Web Development & Mobile Application
-                </h3>
+                <h3 className="fs-5 fw-semibold mb-3">Media Buying</h3>
                 <p className="text-dark mb-0  fs-6">
-                  Developing mobile applications and user-friendly websites to
-                  support your business.
+                  The first line of Lorem Ipsum., Lorem ipsum dolor sit amet..
                 </p>
               </div>
             </div>
@@ -104,11 +101,14 @@ const Service = () => {
 
           <div className="box  p-3 col-lg-4 col-md-6 col-sm-6 col-12">
             <div className="item h-100 bg-light py-5 px-4 rounded-3 text-start">
-              <FiTrendingUp className="fs-1 text-danger mb-4" />
+              <MdOutlineSlowMotionVideo className="fs-1 text-danger mb-4" />
               <div className="content">
-                <h3 className="fs-5 fw-semibold mb-3">Media Buying</h3>
+                <h3 className="fs-5 fw-semibold mb-3">
+                  Photography & Videography
+                </h3>
                 <p className="text-dark mb-0  fs-6">
-                  The first line of Lorem Ipsum., Lorem ipsum dolor sit amet..
+                  Supplying a videographer and a photographer to record your
+                  events and use the footage to support your channels.
                 </p>
               </div>
             </div>
@@ -129,14 +129,14 @@ const Service = () => {
 
           <div className="box  p-3 col-lg-4 col-md-6 col-sm-6 col-12">
             <div className="item h-100 bg-light py-5 px-4 rounded-3 text-start">
-              <MdOutlineSlowMotionVideo className="fs-1 text-danger mb-4" />
+              <SiWebmoney className="fs-1 text-danger mb-4" />
               <div className="content">
                 <h3 className="fs-5 fw-semibold mb-3">
-                  Photography & Videography
+                  Web Development & Mobile Application
                 </h3>
                 <p className="text-dark mb-0  fs-6">
-                  Supplying a videographer and a photographer to record your
-                  events and use the footage to support your channels.
+                  Developing mobile applications and user-friendly websites to
+                  support your business.
                 </p>
               </div>
             </div>
