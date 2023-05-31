@@ -19,7 +19,7 @@ const Portfolio = () => {
   return (
     <div className="portfolio bg-primary">
       <SectionBanner header="Portfolio" main="Home" link="Portfolio" />
-      <Popular />
+      {/* <Popular /> */}
       <Design />
       <SocialMedia />
       <Branding />
