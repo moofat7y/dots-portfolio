@@ -157,7 +157,7 @@ exports.getAllBrandDImages = async (req, res, next) => {
     const page = req.query.page;
     const limit = req.query.limit;
     const skip = (page - 1) * limit;
-    const imagesCount = await BrandImages.countDocuments();
+    const imagesCount = await BrandDImages.countDocuments();
 
     if (req.query.page) {
       if (skip >= imagesCount) {
