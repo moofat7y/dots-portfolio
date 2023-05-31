@@ -11368,7 +11368,7 @@ button.fadeup:hover {
   opacity: 1;
 }
 
-section.branding .branding-list img {
+section.top-clients .clients-list img {
   filter: grayscale(1);
   cursor: pointer;
   -o-object-fit: contain;
@@ -11378,7 +11378,7 @@ section.branding .branding-list img {
   opacity: 0.8;
   transition: 0.3s;
 }
-section.branding .branding-list img:hover {
+section.top-clients .clients-list img:hover {
   transform: scale(1.1);
   opacity: 1;
   filter: grayscale(0);

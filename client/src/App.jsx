@@ -17,8 +17,9 @@ import ArrowTop from "./components/ArrowTop";
 import { getAllPopImages } from "./store/features/populer/popSlice";
 import { getAllLogoImages } from "./store/features/logo/logoSlice";
 import { getAllSocialImages } from "./store/features/social/socialSlice";
-import { getAllBrandImages } from "./store/features/brand/brandSlice";
+import { getAllClientImages } from "./store/features/top-client/clientSlice";
 import WhatsApp from "./components/WhatsApp";
+import { getAllBrandImages } from "./store/features/brand/brandSlice";
 
 function App() {
   const dispatch = useDispatch();
@@ -26,7 +27,8 @@ function App() {
     dispatch(getAllPopImages({ query: "limit=9" }));
     dispatch(getAllLogoImages({ query: "limit=9" }));
     dispatch(getAllSocialImages({ query: "limit=9" }));
-    dispatch(getAllBrandImages({ query: "" }));
+    dispatch(getAllBrandImages({ query: "limit=9&sort=category" }));
+    dispatch(getAllClientImages({ query: "" }));
   }, []);
   return (
     <Suspense fallback={<Loading />}>

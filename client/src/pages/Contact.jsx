@@ -2,7 +2,7 @@ import React from "react";
 import CardSec from "../components/contact/CardSec";
 import Form from "../components/contact/Form";
 import MapLocation from "../components/contact/Location";
-import Branding from "../components/home/Branding";
+import TopClients from "../components/home/TopClients";
 
 const Contact = () => {
   return (
@@ -25,7 +25,7 @@ const Contact = () => {
       <CardSec />
       <Form />
       <MapLocation />
-      <Branding />
+      <TopClients />
     </div>
   );
 };

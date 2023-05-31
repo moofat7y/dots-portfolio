@@ -59,8 +59,12 @@ const Header = () => {
               <NavLink to="/social" className="nav-link">
                 social media
               </NavLink>
+              <NavLink to="/top-clients" className="nav-link">
+                Top Clients
+              </NavLink>
+
               <NavLink to="/brand" className="nav-link">
-                Brand
+                Branding
               </NavLink>
               <button
                 onClick={() => handleLogout()}

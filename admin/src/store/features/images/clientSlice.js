@@ -10,11 +10,11 @@ const initialState = {
   count: 0,
 };
 
-export const getAllBrandImages = createAsyncThunk(
-  "images/get-brand",
+export const getAllClientImages = createAsyncThunk(
+  "images/get-client",
   async ({ query }, thunkAPI) => {
     try {
-      const response = await imagesService.getAllBrandImages(query);
+      const response = await imagesService.getAllClientImages(query);
       return response;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.response.data.message);
@@ -22,15 +22,15 @@ export const getAllBrandImages = createAsyncThunk(
   }
 );
 
-export const uploadBrandImages = createAsyncThunk(
-  "images/upload-brand",
+export const uploadClientImages = createAsyncThunk(
+  "images/upload-client",
   async ({ data }, thunkAPI) => {
     try {
       const formData = new FormData();
       data.map((img) => {
         formData.append("images", img.file);
       });
-      const response = await imagesService.uploadBrandImages(formData);
+      const response = await imagesService.uploadClientImages(formData);
       return response;
     } catch (error) {
       notifyError(error.response.data.message);
@@ -39,11 +39,11 @@ export const uploadBrandImages = createAsyncThunk(
   }
 );
 
-export const updateBrandCategory = createAsyncThunk(
+export const updateClientLink = createAsyncThunk(
   "images/update-link",
   async ({ imgId, data }, thunkAPI) => {
     try {
-      const response = await imagesService.updateBrandCategory(imgId, data);
+      const response = await imagesService.updateClientLink(imgId, data);
       return response;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.response.data.message);
@@ -51,11 +51,11 @@ export const updateBrandCategory = createAsyncThunk(
   }
 );
 
-export const deleteBrandImage = createAsyncThunk(
-  "images/delete-brand",
+export const deleteClientImage = createAsyncThunk(
+  "images/delete-client",
   async ({ public_id }, thunkAPI) => {
     try {
-      const response = await imagesService.deleteBrandImage(public_id);
+      const response = await imagesService.deleteClientImage(public_id);
       return response;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.response.data.message);
@@ -63,40 +63,40 @@ export const deleteBrandImage = createAsyncThunk(
   }
 );
 
-const brandSlice = createSlice({
-  name: "brand",
+const clientSlice = createSlice({
+  name: "client",
   initialState,
   reducers: {},
   extraReducers: (builder) => {
     builder
-      .addCase(getAllBrandImages.pending, (state) => {
+      .addCase(getAllClientImages.pending, (state) => {
         state.isLoading = true;
         state.isError = false;
         state.isSuccess = false;
       })
-      .addCase(getAllBrandImages.fulfilled, (state, action) => {
+      .addCase(getAllClientImages.fulfilled, (state, action) => {
         state.isLoading = false;
         state.isError = false;
         state.isSuccess = true;
         state.images = [...state.images, ...action.payload.images];
         state.count = action.payload.count;
       })
-      .addCase(getAllBrandImages.rejected, (state, action) => {
+      .addCase(getAllClientImages.rejected, (state, action) => {
         state.isLoading = false;
         state.isError = true;
         state.isSuccess = false;
       })
-      .addCase(uploadBrandImages.fulfilled, (state, action) => {
+      .addCase(uploadClientImages.fulfilled, (state, action) => {
         state.images = [...action.payload, ...state.images];
         state.count = action.payload + action.payload.length;
       })
-      .addCase(deleteBrandImage.fulfilled, (state, action) => {
+      .addCase(deleteClientImage.fulfilled, (state, action) => {
         state.images = state.images.filter(
           (image) => image.public_id !== action.meta.arg.public_id
         );
         state.count = state.count - 1;
       })
-      .addCase(updateBrandCategory.fulfilled, (state, action) => {
+      .addCase(updateClientLink.fulfilled, (state, action) => {
         state.images = state.images.map((image) =>
           image.id === action.meta.arg.imgId ? action.payload : image
         );
@@ -104,4 +104,4 @@ const brandSlice = createSlice({
   },
 });
 
-export default brandSlice.reducer;
+export default clientSlice.reducer;

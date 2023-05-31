@@ -10,6 +10,7 @@ import { useSelector } from "react-redux";
 import Popular from "./pages/Popular";
 import Logo from "./pages/Logo";
 import Social from "./pages/Social";
+import TopClients from "./pages/TopClients";
 import Brand from "./pages/Brand";
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
           <Route path="/populer" element={<Popular />} />
           <Route path="/logo" element={<Logo />} />
           <Route path="/social" element={<Social />} />
+          <Route path="/top-clients" element={<TopClients />} />
           <Route path="/brand" element={<Brand />} />
         </Route>
       </Routes>

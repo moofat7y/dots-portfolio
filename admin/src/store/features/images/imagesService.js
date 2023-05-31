@@ -48,24 +48,47 @@ const deleteSocialImage = async (public_id) => {
   return response.data;
 };
 
-const getAllBrandImages = async (query) => {
+const getAllClientImages = async (query) => {
   const response = await api.get(`/image/brand?${query}`);
 
   return response.data;
 };
-const uploadBrandImages = async (data) => {
+const uploadClientImages = async (data) => {
   const response = await api.put("/upload/brand", data);
 
   return response.data;
 };
 
-const updateBrandLink = async (imgId, link) => {
+const updateClientLink = async (imgId, link) => {
   const response = await api.patch(`/image/brand/link/${imgId}`, link);
   return response.data;
 };
 
-const deleteBrandImage = async (public_id) => {
+const deleteClientImage = async (public_id) => {
   const response = await api.delete(`/image/brand?imageId=${public_id}`);
+
+  return response.data;
+};
+
+const getAllBrandImages = async (query) => {
+  const response = await api.get(`/image/brand-design?${query}`);
+
+  return response.data;
+};
+
+const uploadBrandImages = async (data) => {
+  const response = await api.put("/upload/brand-design", data);
+
+  return response.data;
+};
+
+const updateBrandCategory = async (imgId, link) => {
+  const response = await api.patch(`/image/brand/category/${imgId}`, link);
+  return response.data;
+};
+
+const deleteBrandImage = async (public_id) => {
+  const response = await api.delete(`/image/brand-design?imageId=${public_id}`);
 
   return response.data;
 };
@@ -79,10 +102,14 @@ const imagesService = {
   getAllSocialImages,
   uploadSocialImages,
   deleteSocialImage,
+  getAllClientImages,
+  uploadClientImages,
+  deleteClientImage,
+  updateClientLink,
   getAllBrandImages,
   uploadBrandImages,
+  updateBrandCategory,
   deleteBrandImage,
-  updateBrandLink,
 };
 
 export default imagesService;

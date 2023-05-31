@@ -4,13 +4,13 @@ import { RxTrash } from "react-icons/rx";
 import { CiEdit } from "react-icons/ci";
 import { useDispatch } from "react-redux";
 import {
-  deleteBrandImage,
-  updateBrandLink,
-} from "../../store/features/images/brandSlice";
+  deleteClientImage,
+  updateClientLink,
+} from "../../store/features/images/clientSlice";
 import CustomModel from "../CustomModel";
 import { useForm } from "react-hook-form";
 
-const BrandItem = ({ image }) => {
+const ClientItem = ({ image }) => {
   const {
     register,
     handleSubmit,
@@ -22,13 +22,13 @@ const BrandItem = ({ image }) => {
   const [open, setOpen] = useState(false);
   const handleDelete = async () => {
     setIsLoading(true);
-    await dispatch(deleteBrandImage({ public_id: image.public_id }));
+    await dispatch(deleteClientImage({ public_id: image.public_id }));
     setIsLoading(false);
   };
 
   const onSubmit = async (data) => {
     setUpdating(true);
-    await dispatch(updateBrandLink({ imgId: image._id, data }));
+    await dispatch(updateClientLink({ imgId: image._id, data }));
     setUpdating(false);
     setOpen(false);
   };
@@ -133,4 +133,4 @@ const BrandItem = ({ image }) => {
   );
 };
 
-export default BrandItem;
+export default ClientItem;

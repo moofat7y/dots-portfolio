@@ -4,7 +4,8 @@ import Popular from "../components/portfolio/Popular";
 import { useLocation } from "react-router-dom";
 import Design from "../components/portfolio/Design";
 import SocialMedia from "../components/portfolio/SocialMedia";
-import Branding from "../components/home/Branding";
+import TopClients from "../components/home/TopClients";
+import Branding from "../components/portfolio/Branding";
 
 const Portfolio = () => {
   const state = useLocation();
@@ -21,8 +22,9 @@ const Portfolio = () => {
       <SectionBanner header="Portfolio" main="Home" link="Portfolio" />
       {/* <Popular /> */}
       <Design />
-      <SocialMedia />
       <Branding />
+      <SocialMedia />
+      <TopClients />
     </div>
   );
 };

@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import SectionMainHeader from "../SectionMainHeader";
 import { useSelector } from "react-redux";
 
-const Branding = () => {
-  const { images, isLoading, count } = useSelector((state) => state.brand);
-  const branding_list = images?.map((image) => {
+const TopClients = () => {
+  const { images, isLoading, count } = useSelector((state) => state.client);
+  const clients_list = images?.map((image) => {
     return (
       <li key={image._id} className="col-6 col-sm-4 col-lg-3 col-xl-2">
         <a target="_blank" href={image.link ? image.link : "#"}>
@@ -16,7 +16,7 @@ const Branding = () => {
     );
   });
   return (
-    <section id="branding" className="branding bg-primary pb-5 pt-120">
+    <section id="clients" className="top-clients bg-primary pb-5 pt-120">
       <div className="container">
         <SectionMainHeader
           title="Top clients"
@@ -32,10 +32,10 @@ const Branding = () => {
           </div>
         ) : (
           <ul
-            className="branding-list px-0 row justify-content-center"
+            className="clients-list px-0 row justify-content-center"
             style={{ listStyle: "none" }}
           >
-            {branding_list}
+            {clients_list}
           </ul>
         )}
 
@@ -45,4 +45,4 @@ const Branding = () => {
   );
 };
 
-export default Branding;
+export default TopClients;

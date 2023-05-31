@@ -1,8 +1,8 @@
 import React from "react";
 import CompanyRefresh from "../components/home/CompanyRefresh";
-import Branding from "../components/home/Branding";
 import Work from "../components/about/Work";
 import SectionBanner from "../components/SectionBanner";
+import TopClients from "../components/home/TopClients";
 
 const About = () => {
   return (
@@ -10,7 +10,7 @@ const About = () => {
       <SectionBanner header="About" main="Home" link="About" />
       <CompanyRefresh />
       <Work />
-      <Branding />
+      <TopClients />
     </div>
   );
 };

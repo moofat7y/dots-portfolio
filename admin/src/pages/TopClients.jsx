@@ -1,16 +1,16 @@
 import React from "react";
 import SectionMainHeader from "../components/SectionMainHeader";
-import BrandList from "../components/brand-design/BrandList";
+import ClientList from "../components/top-clients/ClientList";
 
-const Brand = () => {
+const TopClients = () => {
   return (
     <section className="popular bg-secondary">
-      <SectionMainHeader title="brand" header="manage branding images" />
+      <SectionMainHeader title="clients" header="manage top clients images" />
       <div className="container">
-        <BrandList />
+        <ClientList />
       </div>
     </section>
   );
 };
 
-export default Brand;
+export default TopClients;
