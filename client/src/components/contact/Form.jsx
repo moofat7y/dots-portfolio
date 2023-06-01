@@ -1,6 +1,7 @@
 import React from "react";
 import SectionMainHeader from "../SectionMainHeader";
 import { useForm } from "react-hook-form";
+import FormImg from "../../assets/contact-us.png";
 const Form = () => {
   const {
     register,
@@ -102,7 +103,7 @@ const Form = () => {
                 style={{ maxHeight: "640px", objectFit: "cover" }}
                 className="ratio ratio-2x3 rounded-3"
                 loading="lazy"
-                src="https://res.cloudinary.com/dzlrv81i7/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1683526057/samples/dots-portfolio/about-11_aabm3z.jpg?_s=public-apps"
+                src={FormImg}
                 alt=""
               />
             </div>

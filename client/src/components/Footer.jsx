@@ -39,8 +39,15 @@ const Footer = () => {
               </div>
 
               <p className="text-dark">
-                Copyright © 2022 All rights reserved by Rainbow-Themes. Built
-                with love in Bangladesh All rights reserved.
+                Copyright © 2023 All rights reserved by{" "}
+                <a
+                  className="nav-link d-inline-block"
+                  target="_blank"
+                  href="https://www.instagram.com/moo.fat7y/"
+                >
+                  moo.fat7y
+                </a>
+                . Built with love in Bangladesh All rights reserved.
               </p>
             </div>
           </div>
@@ -52,19 +59,10 @@ const Footer = () => {
                 <li className="nav-item">
                   <NavLink
                     to="/portfolio"
-                    state={{ navProp: "design" }}
+                    state={{ navProp: "logo-sec" }}
                     className="nav-link"
                   >
-                    Design
-                  </NavLink>
-                </li>
-                <li className="nav-item">
-                  <NavLink
-                    to="/portfolio"
-                    state={{ navProp: "social-media" }}
-                    className="nav-link"
-                  >
-                    Social Media
+                    Logo
                   </NavLink>
                 </li>
                 <li className="nav-item">
@@ -74,6 +72,15 @@ const Footer = () => {
                     className="nav-link"
                   >
                     Branding
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink
+                    to="/portfolio"
+                    state={{ navProp: "social-media" }}
+                    className="nav-link"
+                  >
+                    Social Media
                   </NavLink>
                 </li>
               </ul>
