@@ -464,14 +464,20 @@ footer {
     background-size: cover;
     position: relative;
   }
-  &.contact {
+  &.about {
     background-image: url("../assets/about-cover2.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
   }
-
+  &.contact {
+    background-image: url("../assets/contact-cover.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
   &::before {
     content: "";
     position: absolute;

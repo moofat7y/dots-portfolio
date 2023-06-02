@@ -7,7 +7,7 @@ import { BsDot } from "react-icons/bs";
 const About = () => {
   return (
     <div className="about">
-      <div className="section-banner contact pt-80 pb-80 d-flex align-items-center">
+      <div className="section-banner about pt-120 pb-80 d-flex align-items-center">
         <div className="container pt-80 pb-80 text-center text-white">
           <h1 className="fw-bolder text-grad_banner lh-lg mb-3">About</h1>
           <div className="d-flex text-black justify-content-center align-items-center lh-1">

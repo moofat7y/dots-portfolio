@@ -11438,8 +11438,15 @@ footer .social a:hover {
   background-size: cover;
   position: relative;
 }
-.section-banner.contact {
+.section-banner.about {
   background-image: url("../assets/about-cover2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.section-banner.contact {
+  background-image: url("../assets/contact-cover.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
